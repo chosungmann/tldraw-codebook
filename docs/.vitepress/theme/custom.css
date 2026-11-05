@@ -1,0 +1,24 @@
+/* Diagrams are light-theme PNG renders, so give them a light card in dark mode too. */
+.vp-doc figure.diagram {
+	margin: 24px 0;
+}
+
+.vp-doc figure.diagram img {
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid var(--vp-c-divider);
+	background: #fff;
+}
+
+.vp-doc figure.diagram figcaption {
+	margin-top: 8px;
+	font-size: 13px;
+	color: var(--vp-c-text-2);
+	text-align: center;
+}
+
+/* Long file paths and identifiers in tables should wrap instead of widening the page. */
+.vp-doc table code {
+	word-break: break-word;
+}
